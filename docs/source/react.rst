@@ -5,6 +5,7 @@ Installation
 ------------
 
 Our front-end is implemented by React.js
+
 To run the front-end:
     1. Get the source code:
         .. code-block:: console
@@ -30,4 +31,5 @@ To run the front-end:
         .. code-block:: console
 
             $ npm start
+            
 Then the front-end component would successfully start running!

@@ -1,61 +1,101 @@
-
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
-    <title>Continual Learning Model Back-end APIs &#8212; continual learning system 0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Continual Learning Model Back-end APIs &mdash; continual learning system 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="RITM Back-end APIs" href="ritm.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <link rel="prev" title="RITM Back-end APIs" href="ritm.html" /> 
+</head>
 
-  </head><body>
-  
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> continual learning system
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="environment.html">Environment Setup</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="react.html">React Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ritm.html">RITM Back-end APIs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Continual Learning Model Back-end APIs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#app-py">app.py</a></li>
+</ul>
+</li>
+</ul>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          
+        </div>
+      </div>
+    </nav>
 
-          <div class="body" role="main">
-            
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">continual learning system</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Continual Learning Model Back-end APIs</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/continual_learning.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
   <section id="continual-learning-model-back-end-apis">
-<h1>Continual Learning Model Back-end APIs<a class="headerlink" href="#continual-learning-model-back-end-apis" title="Permalink to this heading">¶</a></h1>
+<h1>Continual Learning Model Back-end APIs<a class="headerlink" href="#continual-learning-model-back-end-apis" title="Permalink to this heading"></a></h1>
 <p>Our continual learning back-end contains a GAPS model, a VOS model, and a memory replay buffer.</p>
 <section id="app-py">
-<h2>app.py<a class="headerlink" href="#app-py" title="Permalink to this heading">¶</a></h2>
+<h2>app.py<a class="headerlink" href="#app-py" title="Permalink to this heading"></a></h2>
 <p>This file is our flask back-end. it contains REST APIs we need.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="gen_frames_with_pred">
-<span class="sig-name descname"><span class="pre">gen_frames_with_pred</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gen_frames_with_pred" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">gen_frames_with_pred</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gen_frames_with_pred" title="Permalink to this definition"></a></dt>
 <dd><p>this function is a helper function which continuously yield predicted frame to our API</p>
 <p>it will trigger <code class="docutils literal notranslate"><span class="pre">my_trainer.infer_one_aot()</span></code> which will generate a predicted frame</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="get_pred_cam_stream">
-<span class="sig-name descname"><span class="pre">get_pred_cam_stream</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_pred_cam_stream" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_pred_cam_stream</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_pred_cam_stream" title="Permalink to this definition"></a></dt>
 <dd><p>front-end could use <code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:7000/pred_cam</span></code> to GET the frame stream from continual learning back-end server.</p>
 <p>Flask API function. this function continuously yield predicted frame.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Flask Response that contains predict frame</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>Flask Response object</p>
 </dd>
 </dl>
@@ -63,21 +103,21 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="gen_frames">
-<span class="sig-name descname"><span class="pre">gen_frames</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gen_frames" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">gen_frames</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gen_frames" title="Permalink to this definition"></a></dt>
 <dd><p>this function is a helper function which continuously yield original camera frame to our API</p>
 <p>Note: this function is for debug purpose.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="get_camera_stream">
-<span class="sig-name descname"><span class="pre">get_camera_stream</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_camera_stream" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_camera_stream</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_camera_stream" title="Permalink to this definition"></a></dt>
 <dd><p>front-end could use <code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:7000/camera</span></code> to GET the frame stream from continual learning back-end server.</p>
 <p>Flask API function. this function continuously yield original camera frame.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Flask Response that contains original camera frame</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>Flask Response object</p>
 </dd>
 </dl>
@@ -85,14 +125,14 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="take_snapshot">
-<span class="sig-name descname"><span class="pre">take_snapshot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#take_snapshot" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">take_snapshot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#take_snapshot" title="Permalink to this definition"></a></dt>
 <dd><p>front-end could use <code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:7000/snapshot</span></code> to GET a snapshot from camera.</p>
 <p>Flask API function. this function return a image by base64 string.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>response json string which contains base64 image string.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>JSON object</p>
 </dd>
 </dl>
@@ -110,14 +150,14 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="undo_finetune">
-<span class="sig-name descname"><span class="pre">undo_finetune</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#undo_finetune" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">undo_finetune</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#undo_finetune" title="Permalink to this definition"></a></dt>
 <dd><p>front-end could use <code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:7000/undo</span></code> to trigger our continual learning model restore the last state (forget the last object it learned)</p>
 <p>Flask API function. this function return the undo status.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>response json string that return the status of API.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>JSON object</p>
 </dd>
 </dl>
@@ -131,7 +171,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="trigger_fine_tune">
-<span class="sig-name descname"><span class="pre">trigger_fine_tune</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trigger_fine_tune" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">trigger_fine_tune</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trigger_fine_tune" title="Permalink to this definition"></a></dt>
 <dd><p>front-end could use <code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:7000/trigger_finetune</span></code> to trigger our continual learning model start to adapt a novel object.</p>
 <p>Flask API function. this function return the adaptation status.</p>
 <p>Request Format:</p>
@@ -146,10 +186,10 @@
 </pre></div>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>response json string that return the status of API.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>JSON object</p>
 </dd>
 </dl>
@@ -165,78 +205,33 @@
 </section>
 
 
+           </div>
           </div>
-          
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ritm.html" class="btn btn-neutral float-left" title="RITM Back-end APIs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Eason.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">continual learning system</a></h1>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
 
-
-
-
-
-
-
-
-<h3>Navigation</h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="environment.html">Environment Setup</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="react.html">React Front-end</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ritm.html">RITM Back-end APIs</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Continual Learning Model Back-end APIs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#app-py">app.py</a></li>
-</ul>
-</li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="ritm.html" title="previous chapter">RITM Back-end APIs</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>document.getElementById('searchbox').style.display = "block"</script>
-
-
-
-
-
-
-
-
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2022, Eason.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="_sources/continual_learning.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  </body>
+</body>
 </html>
