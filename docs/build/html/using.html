@@ -14,7 +14,6 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -44,6 +43,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Start to Use the System</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#running">Running</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#training">Training</a></li>
 </ul>
 </li>
 </ul>
@@ -78,9 +78,9 @@
            <div itemprop="articleBody">
              
   <section id="start-to-use-the-system">
-<h1>Start to Use the System<a class="headerlink" href="#start-to-use-the-system" title="Permalink to this heading"></a></h1>
+<h1>Start to Use the System<a class="headerlink" href="#start-to-use-the-system" title="Permalink to this headline"></a></h1>
 <section id="running">
-<h2>Running<a class="headerlink" href="#running" title="Permalink to this heading"></a></h2>
+<h2>Running<a class="headerlink" href="#running" title="Permalink to this headline"></a></h2>
 <dl>
 <dt>Please run these 3 different commands separately in the specified path:</dt><dd><ol class="arabic">
 <li><dl>
@@ -109,6 +109,34 @@
 <dt>After running the commands above, you will see a html webpage poped up like this:</dt><dd><a class="reference internal image-reference" href="_images/pic1.png"><img alt="Alternative text" src="_images/pic1.png" style="width: 400px;" /></a>
 </dd>
 </dl>
+</section>
+<section id="training">
+<h2>Training<a class="headerlink" href="#training" title="Permalink to this headline"></a></h2>
+<p>Our system could recognize 20 objects by default: ‘wall’, ‘floor’, ‘cabinet’, ‘bed’, ‘chair’, ‘sofa’, ‘table’, ‘door’, ‘window’, ‘bookshelf’, ‘picture’, ‘counter’, ‘desk’, ‘curtain’, ‘refrigerator’, ‘shower curtain’, ‘toilet’, ‘sink’, ‘bathtub’, ‘otherfurniture’.</p>
+<p>In order to train the system to recognize other objects, here are some steps you need to do:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Move the camera towards the objects you would like to recognize.</p></li>
+<li><dl>
+<dt>Click <code class="docutils literal notranslate"><span class="pre">take</span> <span class="pre">the</span> <span class="pre">snapshot</span></code>, and you will see an image like this:</dt><dd><a class="reference internal image-reference" href="_images/pic2.png"><img alt="Alternative text" src="_images/pic2.png" style="width: 400px;" /></a>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Then click the positive button and then click the object that you would like to make the system recognize. You can make multiple clicks on your object to make sure the system could fully mask the object.</dt><dd><a class="reference internal image-reference" href="_images/pic3.png"><img alt="Alternative text" src="_images/pic3.png" style="width: 400px;" /></a>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>If you or the system wrongly labled an area, you can click <code class="docutils literal notranslate"><span class="pre">negative</span></code> and then click the place you or the system wrongly labled like this:</dt><dd><a class="reference internal image-reference" href="_images/pic4.png"><img alt="Alternative text" src="_images/pic4.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/pic5.png"><img alt="Alternative text" src="_images/pic5.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/pic6.png"><img alt="Alternative text" src="_images/pic6.png" style="width: 400px;" /></a>
+</dd>
+</dl>
+</li>
+<li><p>Finally, you can click start fine-tune model to train it.</p></li>
+</ol>
+</div></blockquote>
 </section>
 </section>
 
