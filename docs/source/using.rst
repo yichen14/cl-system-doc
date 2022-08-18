@@ -3,12 +3,16 @@ Start to Use the System
 
 Running
 -------
-Please run these 3 different commands separately in the specified path:
-    1. Please run the following command under the path of ``continual-learning-system``:
+You are given 2 options to run the system:
+    1. If you want to run by using the new system. Please run the following command under the path of ``continual-learning-system``:
         .. code-block:: console
 
             $ python3 run.py
     
+    2. If you want to run the system with objects that you have already learned in the last time. Please run the following command under the path of ``continual-learning-system``:
+        .. code-block:: console
+
+            $ python3 run.py --boot_with_new_system=False
 
 After running the commands above, you will see a html webpage poped up like this:
     .. image:: pic1.png
